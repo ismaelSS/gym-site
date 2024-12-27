@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .text1 {
     @apply text-6xl font-extrabold mmin:text-7xl;
