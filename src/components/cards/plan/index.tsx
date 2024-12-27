@@ -1,3 +1,4 @@
+import PromoTag from '@/components/promoTag'
 import React from 'react'
 
 export interface iPlanCard {
@@ -6,6 +7,7 @@ export interface iPlanCard {
   impulsePhrase: string
   advantagesList: string[]
   price: number
+  discount: number
 }
 
 export default function PlanCard({
@@ -14,6 +16,7 @@ export default function PlanCard({
   impulsePhrase,
   advantagesList,
   price,
+  discount
 }: iPlanCard) {
   return (
     <div className="w-48 flex flex-col items-center p-4 gap-3 md:w-56">
@@ -25,7 +28,7 @@ export default function PlanCard({
       <div
         className={`p-3 flex flex-col gap-3 bg-gradient-to-br ${isEmphasis ? 'from-red-900 to-red-400' : 'from-red-700 to-black'}`}
       >
-        <div className="w-ful flex flex-col items-center gap-2">
+        <div className="w-ful flex flex-col items-center gap-2 z-20">
           <span className="text-2xl font-black bg-white w-full text-center md:text-3xl">
             {new Intl.NumberFormat('pt-BR', {
               style: 'currency',
@@ -33,6 +36,7 @@ export default function PlanCard({
             }).format(price)}
           </span>
         </div>
+        <PromoTag value={discount}/>
 
         <ul className="flex flex-col gap-2">
           {advantagesList.map((advantage, index) => (

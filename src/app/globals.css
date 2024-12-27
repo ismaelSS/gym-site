@@ -23,6 +23,9 @@
   .trapezio {
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   }
+  .trapezio2 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
+  }
   .drop-shadow-custom-white {
     filter: drop-shadow(2px 2px 0px rgba(255, 255, 255, 0.8));
   }

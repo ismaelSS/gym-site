@@ -14,9 +14,10 @@ export const plans: iPlanCard[] = [
     ],
     isEmphasis: true,
     price: 300.0,
+    discount:49
   },
   {
-    PlanName: 'Familia',
+    PlanName: 'Família',
     impulsePhrase: 'Cuide de quem você ama',
     advantagesList: [
       'Acesso ao ambiente fit',
@@ -27,6 +28,7 @@ export const plans: iPlanCard[] = [
     ],
     isEmphasis: false,
     price: 250.0,
+    discount:44
   },
   {
     PlanName: 'Mensal',
@@ -40,6 +42,7 @@ export const plans: iPlanCard[] = [
     ],
     isEmphasis: false,
     price: 49.9,
+    discount: 0
   },
   {
     PlanName: 'Trimestre',
@@ -53,6 +56,7 @@ export const plans: iPlanCard[] = [
     ],
     isEmphasis: false,
     price: 100.0,
+    discount: 33
   },
   {
     PlanName: 'Semestre',
@@ -66,5 +70,6 @@ export const plans: iPlanCard[] = [
     ],
     isEmphasis: false,
     price: 190.0,
+    discount:36
   },
 ]

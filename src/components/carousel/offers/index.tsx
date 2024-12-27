@@ -37,6 +37,7 @@ export default function CarouselOffer() {
     arrows: false,
     dots: false,
     draggable: true,
+    focusOnSelect:true
   }
 
   return (
@@ -44,7 +45,7 @@ export default function CarouselOffer() {
       <Slider {...settings}>
         {plans.map(
           (
-            { isEmphasis, PlanName, advantagesList, impulsePhrase, price },
+            { isEmphasis, PlanName, advantagesList, impulsePhrase, price, discount },
             index,
           ) => (
             <PlanCard
@@ -54,6 +55,7 @@ export default function CarouselOffer() {
               impulsePhrase={impulsePhrase}
               price={price}
               key={index}
+              discount={discount}
             />
           ),
         )}
