@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import { Roboto_Condensed } from 'next/font/google'
 import './globals.css'
 
+
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
   variable: '--font-geist-sans',
@@ -31,9 +32,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br" className="items-center flex">
+    <html lang="pt-br" className="justify-center flex ">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.className} antialiased w-full max-w-[1280px] pl-6 pr-6 bg-blue-700 flex flex-col justify-center`}
+        className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.className} antialiased w-full max-w-[1280px] bg-blue-700 flex flex-col `}
       >
         {children}
       </body>
